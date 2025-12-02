@@ -1,0 +1,124 @@
+.project-tab-button {
+    position: absolute;
+    width: 163px;
+    height: 98px;
+    left: 42%;
+    top: 64%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.readingbooks {
+    position: absolute;
+    width: 175px;
+    height: 100px;
+    left: 86%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.experience {
+    position: absolute;
+    width: 163px;
+    height: 130px;
+    left: 10%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.contact {
+    position: absolute;
+    width: 163px;
+    height: 98px;
+    left: 63%;
+    top: 53%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+.guitar {
+    position: absolute;
+    width: 163px;
+    height: 98px;
+    left: 30%;
+    top: 63%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.about {
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    left: 23%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.skillset{
+    position: absolute;
+    width: 200px;
+    height: 120px;
+    left: 42%;
+    top: 46%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.blogs{
+    position: absolute;
+    width: 68px;
+    height: 38px;
+    left: 92%;
+    top: 54%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.quote{
+    position: absolute;
+    width: 68px;
+    height: 38px;
+    left: 56%;
+    top: 63%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
