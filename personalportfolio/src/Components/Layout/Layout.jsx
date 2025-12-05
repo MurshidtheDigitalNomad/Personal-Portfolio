@@ -47,17 +47,17 @@ const Display = ()=>{
                     <img src="/skillssachets.svg" alt="Skills" />
                 </button>
             </div>
-            <div className ="blog">
+            {/* <div className ="blog">
                 <button className = 'blogs'>
                     <img src="/blognew.svg" alt="Blog" />
                 </button>
-            </div>
+            </div> */}
             <div className ="guitar">
                 <button className = 'guitar'>
                     <img src="/guitar.svg" alt="Guitar" />
                 </button>
             </div>
-            <div className ="aboutme">
+            <div className ="about me">
                 <button 
                     className = 'about'
                     onClick={() => setIsAboutMeModalOpen(true)}
