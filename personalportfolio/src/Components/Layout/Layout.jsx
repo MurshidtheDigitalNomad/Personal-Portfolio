@@ -1,13 +1,32 @@
-import './Project.css';
+import { useState, useEffect } from 'react';
+import './Layout.css';
+import ProjectModal from '../ProjectModal';
+import AboutMeModal from '../AboutMeModal';
 
-const ProjectDisplay = ()=>{
+const Display = ()=>{
+    const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
+    const [isAboutMeModalOpen, setIsAboutMeModalOpen] = useState(false);
+
+    // Open AboutMe modal when component mounts (welcome message)
+    useEffect(() => {
+        setIsAboutMeModalOpen(true);
+    }, []);
+
     return(
         <div>
             <div className="projects">
-                <button className="project-tab-button">
+                <button 
+                    className="project-tab-button"
+                    onClick={() => setIsProjectModalOpen(true)}
+                >
                     <img src="/projectTab.svg" alt="Project Tab" />
                 </button>
             </div>
+            <ProjectModal 
+                isOpen={isProjectModalOpen} 
+                onClose={() => setIsProjectModalOpen(false)} 
+            />
+            
             <div className="readingbooks">
                 <button className = 'readingbooks'>
                     <img src="/readingbooks.svg" alt="Reading Book" />
@@ -39,13 +58,20 @@ const ProjectDisplay = ()=>{
                 </button>
             </div>
             <div className ="aboutme">
-                <button className = 'about'>
+                <button 
+                    className = 'about'
+                    onClick={() => setIsAboutMeModalOpen(true)}
+                >
                     <img src="/cafename.svg" alt="About" />
                 </button>
             </div>
+            <AboutMeModal 
+                isOpen={isAboutMeModalOpen} 
+                onClose={() => setIsAboutMeModalOpen(false)} 
+            />
             <div className="favquote">
                 <button className="quote">
-                <img src="/coffeetable.svg" alt="About" />
+                    <img src="/coffeetable.svg" alt="About" />
                 </button>
 
             </div>
@@ -54,4 +80,4 @@ const ProjectDisplay = ()=>{
     )
 }
 
-export default ProjectDisplay;
+export default Display;

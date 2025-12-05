@@ -1,12 +1,12 @@
 import './App.css'
-import ProjectDisplay from './Components/Projects/Projects.jsx'
+import Display from './Components/Layout/Layout.jsx'
 
 function App() {
 
 
   return (
     <>
-     <ProjectDisplay />
+     <Display />
         
     </>
   )
