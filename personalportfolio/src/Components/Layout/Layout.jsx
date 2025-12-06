@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import './Layout.css';
 import ProjectModal from '../ProjectModal';
 import AboutMeModal from '../AboutMeModal';
+import ExperienceModal from '../ExperienceModal';
 
 const Display = ()=>{
     const [isProjectModalOpen, setIsProjectModalOpen] = useState(false);
     const [isAboutMeModalOpen, setIsAboutMeModalOpen] = useState(false);
+    const [isExperienceModalOpen, setIsExperienceModalOpen] = useState(false);
 
     // Open AboutMe modal when component mounts (welcome message)
     useEffect(() => {
@@ -33,10 +35,18 @@ const Display = ()=>{
                 </button>
             </div>
             <div className="experience">
-                <button className = 'experience'>
+                <button 
+                className = 'experience'
+                onClick={() => setIsExperienceModalOpen(true)}
+                >
                     <img src="/experience.svg" alt="Experience" />
                 </button>
             </div>
+            <ExperienceModal 
+                isOpen={isExperienceModalOpen} 
+                onClose={() => setIsExperienceModalOpen(false)} 
+            />
+            
             <div className="contact">
                 <button className = 'contact'>
                     <img src="/contactme (2).svg" alt="Contact" />
