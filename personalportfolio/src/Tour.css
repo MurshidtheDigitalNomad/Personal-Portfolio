@@ -1,0 +1,219 @@
+/* ============================================
+   CAFÉ TOUR STYLING FOR REACTOUR
+   ============================================ */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&family=Rubik:wght@400;500;600;700&display=swap');
+
+/* Tour Popover Container */
+[data-tour-elem="controls"] {
+  background: linear-gradient(135deg, #e3c7a0 0%, #e2a165 100%) !important;
+  border-radius: 20px !important;
+  padding: 24px !important;
+  box-shadow: 0 12px 40px rgba(74, 38, 19, 0.4),
+              0 0 60px rgba(218, 121, 56, 0.3),
+              inset 0 2px 8px rgba(255, 255, 255, 0.3) !important;
+  border: 3px solid rgba(132, 76, 60, 0.4) !important;
+  min-width: 320px !important;
+  font-family: 'Poppins', sans-serif !important;
+  position: relative !important;
+  overflow: visible !important;
+}
+
+/* Coffee cup decoration on tour box */
+[data-tour-elem="controls"]::before {
+  content: '☕';
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  font-size: 32px;
+  filter: drop-shadow(0 2px 4px rgba(74, 38, 19, 0.3));
+  animation: steam-float 2s ease-in-out infinite;
+  z-index: 100;
+}
+
+@keyframes steam-float {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-3px) rotate(5deg);
+  }
+}
+
+/* Wooden label effect */
+[data-tour-elem="controls"]::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(180deg, 
+    rgba(255, 255, 255, 0.3) 0%, 
+    transparent 100%);
+  border-radius: 40px 40px 0 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Tour Content Text - target the content div */
+[data-tour-elem="controls"] [data-tour-elem="content"] {
+  color: #4a2613 !important;
+  font-size: 16px !important;
+  line-height: 1.6 !important;
+  font-weight: 500 !important;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.5) !important;
+  margin-bottom: 20px !important;
+  font-family: 'Poppins', sans-serif !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* Navigation Buttons Container */
+[data-tour-elem="controls"] [data-tour-elem="navigation"] {
+  display: flex !important;
+  gap: 12px !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  position: relative !important;
+  z-index: 2 !important;
+  margin-top: 16px !important;
+}
+
+/* All Buttons Base Style */
+[data-tour-elem="controls"] button {
+  background: linear-gradient(135deg, #844c3c 0%, #6d3f32 100%) !important;
+  color: #e3c7a0 !important;
+  border: 2px solid rgba(74, 38, 19, 0.3) !important;
+  border-radius: 12px !important;
+  padding: 10px 20px !important;
+  font-size: 20px !important;
+  font-weight: 600 !important;
+  font-family: 'Rubik', sans-serif !important;
+  cursor: pointer !important;
+  transition: all 0.3s ease !important;
+  box-shadow: 0 4px 12px rgba(74, 38, 19, 0.3),
+              inset 0 1px 3px rgba(255, 255, 255, 0.2) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+  position: relative !important;
+  overflow: hidden !important;
+  z-index: 2 !important;
+}
+
+/* Button Hover Effect */
+[data-tour-elem="controls"] button:hover {
+  background: linear-gradient(135deg, #da7938 0%, #966a2a 100%) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 16px rgba(218, 121, 56, 0.4),
+              inset 0 1px 3px rgba(255, 255, 255, 0.3) !important;
+  border-color: rgba(218, 121, 56, 0.5) !important;
+}
+
+/* Button Active/Click Effect */
+[data-tour-elem="controls"] button:active {
+  transform: translateY(0) !important;
+  box-shadow: 0 2px 8px rgba(74, 38, 19, 0.4) !important;
+}
+
+/* Close Button */
+[data-tour-elem="controls"] button[data-tour-elem="right-arrow"]:last-of-type,
+[data-tour-elem="badge"] ~ button {
+  position: absolute !important;
+  top: -12px !important;
+  right: -12px !important;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: 50% !important;
+  padding: 0 !important;
+  background: linear-gradient(135deg, #844c3c 0%, #6d3f32 100%) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 20px !important;
+  line-height: 1 !important;
+  z-index: 10 !important;
+  min-width: unset !important;
+}
+
+/* Step Counter Badge */
+[data-tour-elem="badge"] {
+  background: linear-gradient(135deg, #966a2a 0%, #844c3c 100%) !important;
+  color: #e3c7a0 !important;
+  border-radius: 20px !important;
+  padding: 6px 14px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  font-family: 'Rubik', sans-serif !important;
+  box-shadow: 0 3px 8px rgba(74, 38, 19, 0.3),
+              inset 0 1px 2px rgba(255, 255, 255, 0.2) !important;
+  border: 2px solid rgba(226, 161, 101, 0.3) !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+  position: relative !important;
+  z-index: 2 !important;
+}
+
+/* Arrow pointing to element */
+[data-tour-elem="arrow"] {
+  color: #e2a165 !important;
+}
+
+/* Backdrop/Overlay */
+[data-tour-elem="mask"] {
+  opacity: 0.85 !important;
+  background-color: rgba(35, 31, 32, 0.9) !important;
+}
+
+/* Highlighted element styling */
+[data-tour-elem="helper"] {
+  border-radius: 16px !important;
+  box-shadow: 0 0 0 5px rgba(218, 121, 56, 0.4),
+              0 0 0 9999px rgba(35, 31, 32, 0.85),
+              0 0 40px rgba(218, 121, 56, 0.6) !important;
+}
+
+/* Previous/Next arrow buttons */
+button[data-tour-elem="left-arrow"],
+button[data-tour-elem="right-arrow"] {
+  min-width: 80px !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  [data-tour-elem="controls"] {
+    min-width: 280px !important;
+    padding: 20px !important;
+  }
+  
+  [data-tour-elem="controls"] [data-tour-elem="content"] {
+    font-size: 14px !important;
+  }
+  
+  [data-tour-elem="controls"] button {
+    padding: 8px 16px !important;
+    font-size: 13px !important;
+  }
+  
+  [data-tour-elem="controls"]::before {
+    font-size: 28px !important;
+    top: -12px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  [data-tour-elem="controls"] {
+    min-width: 240px !important;
+    padding: 16px !important;
+    border-radius: 16px !important;
+  }
+  
+  [data-tour-elem="controls"] [data-tour-elem="content"] {
+    font-size: 13px !important;
+    margin-bottom: 16px !important;
+  }
+  
+  [data-tour-elem="controls"] button {
+    padding: 7px 14px !important;
+    font-size: 12px !important;
+  }
+}
