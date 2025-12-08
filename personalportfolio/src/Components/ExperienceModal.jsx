@@ -124,7 +124,7 @@ const ExperienceModal = ({ isOpen, onClose }) => {
                 <span className="checkpoint-date">Co-Founder & Chief Technical Officer(CTO)</span>
                 <div className="experience-layout">
                   <div className="experience-image">
-                    <img src="/experience1.png" alt="Experience 2020-2023" />
+                    <img src="/DanaMeloCover.jpg" alt="Experience 2020-2023" />
                   </div>
                   <div className="experience-description">
                     <p>
@@ -152,10 +152,10 @@ const ExperienceModal = ({ isOpen, onClose }) => {
             {/* Early 2024 - Barista */}
             <div className="mini-checkpoint">
               <div className="checkpoint-node">
-                <img src="/barista.png" alt="Barista" className="checkpoint-icon" />
+                <img src="/Logo.svg" alt="Barista" className="checkpoint-icon" />
               </div>
               <div className="checkpoint-content">
-                <h3 className="checkpoint-title">Self-Made Barista</h3>
+                <h3 className="checkpoint-title">Self-Proclaimed Barista</h3>
                 <span className="checkpoint-date">Early 2024</span>
                 <p className="checkpoint-description">
                   As a self-taught barista, I spent countless hours experimenting with the fundamentals—counting milk-boil cycles, adjusting bitterness levels, and refining the perfect sugar-milk-coffee ratio. I shared each batch with friends, gathering honest feedback and keeping mental notes of what worked. Life gave me lemons, so I learned to brew the perfect cup of coffee instead.
@@ -166,7 +166,7 @@ const ExperienceModal = ({ isOpen, onClose }) => {
             {/* Late 2024 - Guitarist */}
             <div className="mini-checkpoint">
               <div className="checkpoint-node">
-                <img src="/guitar.png" alt="Guitar" className="checkpoint-icon" />
+                <img src="/MyGuitar.png" alt="Guitar" className="checkpoint-icon" />
               </div>
               <div className="checkpoint-content">
                 <h3 className="checkpoint-title">Critically Criticized Guitarist</h3>
@@ -193,7 +193,7 @@ const ExperienceModal = ({ isOpen, onClose }) => {
                 <span className="experience-date">Team Lead | March 2025</span>
                 <div className="experience-layout">
                   <div className="experience-image">
-                    <img src="/exp2025a.png" alt="Experience March 2025" />
+                    <img src="/HealthPulse.png" alt="Experience March 2025" />
                   </div>
                   <div className="experience-description">
                    <p>
@@ -216,7 +216,7 @@ const ExperienceModal = ({ isOpen, onClose }) => {
                 <span className="experience-date">Team Lead | August - September 2025</span>
                 <div className="experience-layout">
                   <div className="experience-image">
-                    <img src="/exp2025b.png" alt="Experience August 2025" />
+                    <img src="/PlantdexCover.jpg" alt="Experience August 2025" />
                   </div>
                   <div className="experience-description">
                     <p>
